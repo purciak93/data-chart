@@ -1,0 +1,37 @@
+<main class="order-book-container">
+  <section class="chart-container">
+    <canvas
+      baseChart
+      [data]="chartData"
+      [options]="chartOptions"
+      [type]="'bar'"
+    ></canvas>
+  </section>
+  <section class="controls">
+    <button class="button" (click)="prev()" [disabled]="currentIndex === 0">
+      {{ prevBtn }}
+    </button>
+    <button
+      class="button"
+      (click)="next()"
+      [disabled]="currentIndex === snapshots.length - 1"
+    >
+      {{ nextBtn }}
+    </button>
+
+    <button class="button" (click)="play()" [disabled]="playing">
+      {{ playBtn }}
+    </button>
+    <button class="button" (click)="stop()" [disabled]="!playing">
+      {{ stopBtn }}
+    </button>
+
+    <input
+      type="range"
+      min="0"
+      [max]="snapshots.length - 1"
+      [(ngModel)]="currentIndex"
+      (input)="onSliderChange($event)"
+    />
+  </section>
+</main>

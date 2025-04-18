@@ -1,0 +1,28 @@
+ [
+    {
+      "timestamp": "2025-04-17T12:00:00Z",
+      "bids": [
+        { "price": 100.5, "volume": 10 },
+        { "price": 100.0, "volume": 15 },
+        { "price": 99.5, "volume": 20 }
+      ],
+      "asks": [
+        { "price": 101.0, "volume": 8 },
+        { "price": 101.5, "volume": 12 },
+        { "price": 102.0, "volume": 18 }
+      ]
+    },
+    {
+      "timestamp": "2025-04-17T12:01:00Z",
+      "bids": [
+        { "price": 100.4, "volume": 12 },
+        { "price": 100.0, "volume": 18 },
+        { "price": 99.8, "volume": 25 }
+      ],
+      "asks": [
+        { "price": 101.2, "volume": 10 },
+        { "price": 101.8, "volume": 15 },
+        { "price": 102.5, "volume": 20 }
+      ]
+    }
+  ]
